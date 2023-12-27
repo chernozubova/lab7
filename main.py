@@ -102,18 +102,37 @@ def menu():
         point = input("Выберите пункт меню: ")
 
         if point == "1":
-            pass
+            plane = create_plane()
+            print("Самолет создан")
         elif point == "2":
-            pass
+            if plane:
+                flight = create_flight(plane)
+                print("Рейс создан")
+            else:
+                print("Сначала создайте самолет")
         elif point == "3":
-            pass
+            if flight:
+                ticket = create_ticket(flight)
+                print("Билет создан")
+            else:
+                print("Сначала создайте рейс")
         elif point == "4":
-            pass
+            if plane:
+                print(plane)
+            else:
+                print("Сначала создайте самолет")
         elif point == "5":
-            pass
+            if flight:
+                print(flight)
+            else:
+                print("Сначала создайте рейс")
         elif point == "6":
-            pass
+            if ticket:
+                print(ticket)
+            else:
+                print("Сначала создайте билет")
         elif point == "7":
-            pass
+            print("Программа завершена")
+            break
         else:
-            pass
+            print("Выберите верный пункт меню")
