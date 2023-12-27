@@ -68,3 +68,12 @@ class Ticket:
 
     def __str__(self):
         return f"Билет - Пассажир: {self.passenger} Место: {self.seat}"
+
+def create_plane():
+        return
+
+def create_flight():
+        return
+
+def create_ticket():
+        return
