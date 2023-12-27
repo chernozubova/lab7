@@ -84,3 +84,36 @@ def create_ticket(flight):
     passenger = input("Введите имя пассажира: ")
     seat = input("Введите место: ")
     return Ticket(passenger, seat, flight)
+def menu():
+    plane = None
+    flight = None
+    ticket = None
+
+    while True:
+        print("\nМеню:")
+        print("1. Создать самолет")
+        print("2. Создать рейс")
+        print("3. Создать билет")
+        print("4. Вывести информацию о самолете")
+        print("5. Вывести информацию о рейсе")
+        print("6. Вывести информацию о билете")
+        print("7. Выход из программы")
+
+        point = input("Выберите пункт меню: ")
+
+        if point == "1":
+            pass
+        elif point == "2":
+            pass
+        elif point == "3":
+            pass
+        elif point == "4":
+            pass
+        elif point == "5":
+            pass
+        elif point == "6":
+            pass
+        elif point == "7":
+            pass
+        else:
+            pass
