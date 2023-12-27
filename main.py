@@ -70,10 +70,17 @@ class Ticket:
         return f"Билет - Пассажир: {self.passenger} Место: {self.seat}"
 
 def create_plane():
-        return
+    name = input("Введите авиакомпанию самолета: ")
+    return Plane(name)
 
-def create_flight():
-        return
 
-def create_ticket():
-        return
+def create_flight(plane):
+    origin = input("Введите пункт отправления: ")
+    destination = input("Введите пункт назначения: ")
+    return Flight(plane, origin, destination)
+
+
+def create_ticket(flight):
+    passenger = input("Введите имя пассажира: ")
+    seat = input("Введите место: ")
+    return Ticket(passenger, seat, flight)
